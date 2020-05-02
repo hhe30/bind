@@ -1,0 +1,16 @@
+$TTL	604800
+@	IN	SOA	dns.home.salocal. root.home.salocal. (
+	              2020050201 	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 	; Negative Cache TTL
+);
+; name servers - NS records
+@    IN      NS      dns.home.salocal.
+
+; name servers - A records
+dns.home.salocal.          IN      A       192.168.50.102
+
+; subnet clients - A records
+example.home.salocal.        IN      A      192.168.50.100
